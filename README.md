@@ -1,3 +1,1 @@
-# githuvtestreoi
-# githubtestrepo
 # githubtestrepo
