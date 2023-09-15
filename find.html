@@ -26,29 +26,32 @@
     </div>
 
     <header class="screen-header">
-        <h1 class="screen-header__title">Chats</h1>
-        <div class="screen-header__icons">
+        <h1 class="screen-header__title">Find</h1>
+        <div class="screen-header__icons">            
             <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
-            <span><i class="fa-regular fa-comment-dots fa-lg"></i></span>
-            <span><i class="fa-solid fa-music fa-lg"></i></span>
-            <span><i class="fa-solid fa-gear fa-lg"></i></span>
-        </div>
+            <span><div class="dot gear-dot"></div><i class="fa-solid fa-gear fa-lg"></i></span>                                         
+        </div>        
     </header>
 
     <main class="main-screen">
-        <div class="user-component">
-            <div class="user-component__column">
-                <img src="https://vicharkness.co.uk/wp-content/uploads/2019/03/aiface-1012x1024.png"
-                    class="user-component__avatar user-component__avatar" />
-                <div class="user-component__text">
-                    <h4 class="user-component__title">Jake</h4>
-                    <h6 class="user-component__subtitle">Please check My Kokoa Account info</h6>
-                </div>
+        <div class="find-icons">
+            <div class="find-icons__icon">
+                <i class="fa-solid fa-qrcode"></i>
+                <span>QR code</span>
             </div>
-            <div class="user-component__column">
-                <span class="user-component__time">21:22</span>
-                <div class="badge">1</div>
+            <div class="find-icons__icon">
+                <i class="fa-regular fa-address-book fa-flip-horizontal"></i>
+                <span>Add by Contacts</span>
             </div>
+            <div class="find-icons__icon">
+                <i class="fa-solid fa-fingerprint"></i>
+                <span>Add by ID</span>
+            </div>
+            <div class="find-icons__icon">
+                <i class="fa-regular fa-envelope"></i>
+                <span>Invite</span>
+            </div>
+
         </div>
     </main>
 
@@ -62,7 +65,7 @@
             <li class="nav__btn">
                 <a class="nav__link" href="chats.html">
                     <span class="nav__notification badge">1</span>
-                    <i class="fa-solid fa-comment fa-2x"></i>
+                    <i class="fa-regular fa-comment fa-2x"></i>
                 </a>
             </li>
             <li class="nav__btn">
@@ -78,8 +81,6 @@
             </li>
         </ul>
     </nav>
-
-
 
 </body>
 
