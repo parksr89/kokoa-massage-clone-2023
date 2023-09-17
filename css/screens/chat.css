@@ -48,12 +48,21 @@
     border-radius: 25px;
     font-size: 14px;
     margin-bottom: 25px;
+
+    transform: scale(2) rotateY(360deg);
+    opacity: 0;
+    animation: appearBtnAnimation 1s ease-in-out forwards;
 }
+
 
 .messege-row{
     width: 100%;
     display:flex;
     margin-bottom: 25px;
+    
+    transform: translateX(100vw);
+    opacity: 0;
+    animation: appearBtnAnimation 2s ease-in-out forwards;
 }
 
 .messege-row img {
@@ -90,7 +99,12 @@
 
 .messege-row--own{
     justify-content: flex-end;
+    transform: translateX(-100vw);
+    opacity: 0;        
+    animation: appearBtnAnimation 2s ease-in-out forwards;
+    animation-delay: 1.5s;
 }
+
 
 .messege-row--own .messege__bubble{
     background-color: var(--yellow);
@@ -193,8 +207,8 @@
 }
 
 .reply input:focus {
-    width: 94vw;
-    transform: translateX(-4%) translateY(-80px);
+    
+    transform: translateX(-2vw) translateY(-80px) scale(1.02,1);
 }
 
 .reply:focus-within {
