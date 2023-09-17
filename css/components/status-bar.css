@@ -3,9 +3,9 @@
     display: flex;
     justify-content: center;
     padding: 5px, 3px;
-    position: fixed;
+    position: sticky;
     box-sizing: border-box;
-    top: 0;
+    top: 5px;
     width: 100%;
     font-weight: 600;
 
