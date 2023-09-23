@@ -13,6 +13,36 @@
     font-size: 22px;
 }
 
+.settings__setting-column{
+    transform: translateY(50px);
+    opacity: 0;
+    animation: appearBtnAnimation 0.3s ease-in-out forwards;    
+}
+
+.settings__setting:nth-child(2) .settings__setting-column {
+    animation-delay: 0.25s;
+}
+
+.settings__setting:last-child .settings__setting-column{
+    animation-delay: 0.5s;
+}
+
 .settings__setting-column:last-child{
     opacity: 0.5;
+}
+
+.settings__setting:nth-child(1):hover{
+    transform: scale(1.5) translateX(16%);
+    color: red;
+}
+
+.settings__setting:nth-child(2):hover{
+    transform: scale(1.5) translateX(16%);
+    color: var(--yellow);
+}
+
+.settings__setting:nth-child(3):hover{
+    transform: scale(1.5);
+    color: blue;
+    justify-content: space-around;
 }
