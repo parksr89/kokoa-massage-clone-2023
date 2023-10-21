@@ -1,0 +1,96 @@
+body{
+    background-color: #000000ff;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green{
+    background-color: #6bbcbeff;
+    height: 380px;
+    width: 430px;
+    display: flex;        
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+@keyframes pointsround {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(180deg);
+    }
+}
+
+.points{
+    display: flex;
+    top:131px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 60px;            
+    animation: pointsround 1s ease-in-out infinite;
+}
+.point{
+    width:8px;
+    height: 8px;
+    border-radius: 50%;            
+    background-color: white;  
+                      
+}
+
+@keyframes sticklong {
+    0%{
+        transform: scale(1,1);
+    }
+    20%{
+        transform: scale(1,2);
+    }
+    40%{
+        transform: scale(1,1);
+    }
+    60%{
+        transform: scale(1,1);
+    }
+    80%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+.sticks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 60px;
+    bottom: 121px;
+    
+}
+
+.stick{
+    width:9px;
+    height: 32px;                        
+    background-color: white;
+    animation: sticklong 1s ease-in-out infinite;
+}
+.one{
+    animation-delay: 0s;
+}
+.two{
+    animation-delay: 0.1s;
+}
+.three{
+    animation-delay: 0.2s;          
+}
+.four{
+    animation-delay: 0.3s;
+}
+.five{
+    animation-delay: 0.4s;
+}

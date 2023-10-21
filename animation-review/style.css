@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;   
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+
+:root{
+    --main-color: greenyellow;
+    --yellow:#ffce33;
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+.poster{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite; 
+    border: 1px solid rgba(0, 0, 0, 0.6); 
+    border-radius: 25px;
+    box-shadow: 10px 15px 5px rgba(0, 0, 0, 0.6);
+    height: 760px;
+    width: 400px;  
+    box-sizing: border-box;  
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;        
+}
+.status-top-bar{    
+    background-color: greenyellow;
+    padding: 35px 16px;
+    border-top-left-radius: 25px ;
+    border-top-right-radius: 25px ;
+    
+}
+
+.status-top-bar__items{
+    padding:0px 16px;
+    margin-top: -5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.status-top-bar__item:nth-child(2){
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bolder; 
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+#search-bar input{ 
+    position: absolute;    
+    top:70px;
+    left: 20px;    
+    border: none;
+    width: 360px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 30px;
+    border-bottom: 5px solid rgba(177, 177, 177, 0.158);
+}
+
+#search-bar input::placeholder{
+    text-align: start;    
+    color: green;
+    font-weight: 700;
+}
+
+.recommanded-animation{    
+    margin:30px;
+    margin-top: 50px;
+}
+
+.topic__title{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.recommended-animation__contents{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.recommended-animation__contents__big-image{
+    margin-top: 10px;    
+}
+
+.recommended-animation__contents__big-image img{
+    height: 160px;
+    width: 120px;
+    border-radius: 20px;
+}
+
+.recommended-animation__contents__items span{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.Second-title__text{
+    font-weight: 700;
+    font-size: 14px;
+    opacity: 0.75;
+}
+
+.third-title__text{
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 0.3;
+}
+
+.recommended-animation__contents__items span h4 {
+    display: inline-block;
+    align-items: center;
+    padding: 3px 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: rgba( 128,128,128, 0.4); 
+    border-radius: 5px;
+}
+
+.recommended-animation__contents__items span:last-child{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 30px;       
+}
+
+.recommended-animation__contents__items span:last-child a{
+    padding: 0px 10px;
+}
+
+.recommended-animation__contents__items span:last-child a:first-child{
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: var(--main-color);
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+}
+.recommended-animation__contents__items span:last-child a:last-child{
+    color: rgb(22, 107, 1);
+    font-weight: 800;
+    margin-left: 25px;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: var(--main-color);
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+}
+
+.recommended-animation__contents__items-rate i{
+    color:var(--yellow);
+}
+
+.this-week-animations{
+    margin: 0px 20px;
+    margin-bottom: 20px;
+    overflow:hidden;
+    
+}
+
+@keyframes movingAnime{
+    0%{
+        transform:translate(0%);
+    }
+    50%{
+        transform:translate(-65%);
+    }
+    100%{
+        transform:translate(0%);
+    }
+}
+
+.this-week-animations__ltems{
+    display: flex;
+    flex-direction: row;
+    animation: movingAnime 10s ease-in-out infinite;    
+}
+
+.this-week-animations__ltem{
+    display: block;
+    margin: 15px;
+}
+
+.this-week-animations__ltem ul{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.this-week-animations__ltem ul li{
+    display: inline;
+    font-size: 10px;      
+    color: #ffce33;
+}
+
+.this-week-animations__ltem img{
+    height: 90px;
+    width: 70px;
+    border-radius: 10px;
+    border: 0.1px solid rgba( 128,128,128, 0.4);
+}
+
+.new-animation{
+    margin-left: 30px;
+}
+
+.new-animation-contents{
+    margin-top: 20px;
+    display: flex;    
+}
+
+.new-animation-contents img {
+    margin-right: 20px;
+    height: 120px;
+    width: 100px;
+    border-radius: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+
+.new-animation-contents__contents-ani-title{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.new-animation-contents__contents-text{
+    width: 200px;
+}
+img{
+    transition: transform 1s ease-in-out;
+}
+
+img:hover{
+    transform: scale(1.5);
+    margin: auto;    
+}
+

@@ -1,0 +1,119 @@
+.play-screen__contents{
+    margin: 30px;
+    margin-top: 60px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.play-screen__contents img,
+.play-screen__contents span{
+    display: block;
+}
+
+.play-screen__contents img{
+    height: 210px;
+    width: 210px;    
+    border-radius: 20px;
+    box-shadow:0px 12px 20px 1px rgba(0, 0, 0, .4);
+}
+
+.play-screen__contents h3{
+    margin-top: 50px; 
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.play-screen__contents h5{
+    margin-top: 15px;    
+    font-size: 12px;
+    font-weight: 800;
+    opacity: 0.4;
+}
+
+.play-screen__play-options{
+    margin: 25px;
+    margin-top: 70px;
+}
+
+.play-screen__play-options__duration-texts div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play-screen__play-options__duration-texts-time
+{
+    display: block;
+    font-size: 10px;
+    margin: 0 3px;
+    margin-bottom: -10px;
+    opacity: 0.5;
+    font-weight: 700;
+}
+
+.play-screen__play-options__duration-texts-pregress{
+    width: 227px;
+    height: 40px;
+    position: relative;
+    overflow:hidden ;
+    
+}
+.play-screen__play-options__duration-texts-pregressingmax{
+    position: absolute;
+    height: 3px;
+    width: 230px;
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 2px;     
+    
+}
+
+.play-screen__play-options__duration-texts-pregressing{
+    position: absolute;
+    height: 3px;
+    width: 230px;
+    left: -60px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 2px;   
+}
+
+.play-screen__play-options__duration-texts-pregress-circle{
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    left: 165px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 50%;   
+}
+
+.play-screen__play-options__buttens{
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play-screen__play-options__buttens i{
+    display: block;
+}
+
+.play-screen__play-options__buttens i:nth-child(odd){
+    font-size: 13px;
+    opacity: 0.4;
+}
+
+.play-screen__play-options__buttens i:nth-child(even){
+    font-size: 20px;
+}
+.play-screen__play-options__buttens i:nth-child(3){
+    font-size: 20px;    
+    opacity: 1;
+    color: white;
+    padding: 15px 20px;
+    padding-right: 16px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow:0px 5px 20px 1px rgba(0, 0, 0, .4);
+}

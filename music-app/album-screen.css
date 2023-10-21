@@ -1,0 +1,222 @@
+
+.album-screen__sing-contents{
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.album-screen__sing-contents img{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    margin-bottom: 32px;
+    box-shadow:0px 12px 20px 1px rgba(0, 0, 0, .4);
+}
+
+.album-screen__sing-contents h3{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+.album-screen__sing-contents h5{
+    margin-top: 13px;    
+    font-size: 12px;
+    font-weight: 800;
+    opacity: 0.5;
+}
+.album-screen__options{
+    margin: 0px 40px;
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 13px;
+}
+.album-screen__options span{
+    display: block;
+    padding: 12px 0;
+    width: 100px;
+    border-radius: 25px;   
+    box-shadow: var(--box-shadow);
+}
+.album-screen__options span:first-child{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.album-screen__options span:last-child{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.album-screen__options span:last-child i{
+    margin-top: 1px;       
+    margin-right: 7px;
+}
+
+.album-screen__playlist{    
+    height: 250px;
+    overflow: auto;    
+}
+
+.album-screen__playlist__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 15px;    
+    margin-top: -10px;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+}
+.album-screen__playlist__list{
+    margin-top: 23px;
+    align-items: center;
+}
+.album-screen__playlist__item-contents{
+    display: flex;
+    align-items: center;        
+    padding:10px 6px;    
+}
+
+.album-screen__playlist__item-contents-photo{     
+    height: 40px;
+    width: 40px;   
+    display: flex;
+    position: relative;    
+}
+
+.album-screen__playlist__item-contents-photo-Rhythm{
+    height: 24px;
+    width: 20px;      
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0px;
+    left: 10px; 
+    padding: 1px; 
+}
+
+@keyframes RhythmMove {
+    0%{
+        transform: scaleY(1) ;
+        
+    }
+    50%{
+        transform: scaleY(3) translateY(-1.672px);
+        
+        
+    }
+    100%{
+        transform: scaleY(1) ;
+        
+    }
+}
+
+.album-screen__playlist__item:hover 
+.album-screen__playlist__item-contents-photo-Rhythm div{    
+    opacity: 0.7;
+    animation: RhythmMove 0.5s ease-in-out infinite;
+
+}
+
+
+.album-screen__playlist__item:hover 
+.album-screen__playlist__item-contents-photo-Rhythm div:nth-child(2){    
+    opacity: 0.7;
+    animation: RhythmMove 0.5s ease-in-out infinite;
+    animation-delay: 0.3s;
+}
+.album-screen__playlist__item:hover 
+.album-screen__playlist__item-contents-photo-Rhythm div:last-child{    
+    opacity: 0.7;
+    animation: RhythmMove 0.5s ease-in-out infinite;
+    animation-delay: 0.15s;
+}
+
+.album-screen__playlist__item:hover {    
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    transform: scale(1.05);
+}
+
+.album-screen__playlist__item-contents-photo-Rhythm div{  
+    display: block;
+    height: 6px;
+    width: 4px;
+    background-color: white;
+    opacity: 0;
+}
+
+.album-screen__playlist__item-contents-photo img{    
+    height: 40px;
+    width: 40px;
+    border-radius: 13px;
+    box-shadow:  0px 0px 12px 1px rgba(0, 0, 0, .3);
+}
+
+.album-screen__playlist__item-moreicon{
+    margin-right: 10px;    
+}
+.album-screen__playlist__item-text{
+    margin-left: 10px;
+}
+.album-screen__playlist__item-text span{
+    display: block;
+}
+
+.contents-singer{
+    font-size:10px;
+    opacity: 0.5;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.contents-singname{
+    font-size:12px;
+    font-weight: 800;
+    text-transform:uppercase;
+}
+
+.album-screen__play-options{
+    height: 57px;
+    width: 280px;
+    margin: 16px 12px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.album-screen__play-options-contents span{
+ display: block;
+ margin-left: 23px;  
+}
+
+.album-screen__play-options-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 23px;
+    width: 80px;
+}
+
+.album-screen__play-options-button i{
+    display: block;
+    font-size: 13px;
+}
+.album-screen__play-options-button__play-pause i{
+    font-size: 25px;
+}
+
+
+

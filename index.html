@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to kokoa Talk</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Kokoa Talk Clone</title>
     <script src="https://kit.fontawesome.com/fa2e5e6392.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <div class="status-bar">
-        <div class="status-bar__column">
-            <span>No Service</span>
-            <i class="fa-solid fa-wifi"></i>
-        </div>
-        <div class="status-bar__column">
-            <span>18:43</span>
-        </div>
-        <div class="status-bar__column">
-            <span>110%</span>
-            <i class="fa-solid fa-battery-full fa-lg"></i>
-            <i class="fa-solid fa-bolt"></i>
-        </div>
-    </div>
-
-    <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to kokoa clone </h1>
-        <p class="welcome-header__text">If you have a kokoa Account, log in with your email or phone number.</p>
+    <header class="header">
+        Kokoa Talk Clone
     </header>
-    
-    <form action="friends.html" method="get" id="login-form">
-        <input name="username" required type="text" placeholder="Email or phone number" />
-        <input name="password" required type="password" placeholder="Password" minlength="5" />
-        <input type="submit" value="Log In" />
-        <a href="#">Find Kokoa Account or Password</a>
-    </form>
-    
-    <div id="no-mobile">
-        <span>Your screen is too big ㅠㅠ</span>
-    </div>
-    
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link Create An Account" href="create-an-account/index.html">
+                    Create An Account (html basic)
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link animation" href="animation-css/index.html">
+                    Animation CSS
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link playlist" href="playlist/index.html">
+                    Playlist
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link animation-review" href="animation-review/index.html">
+                    Animation Review
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link music-app" href="music-app/index.html">
+                    Music App
+                </a>
+            </li>                       
+            <li class="nav__btn">
+                <a class="nav__link kokoa-clone-final" href="kokoa-clone-final/index.html">
+                    Kokoa Clone Final
+                </a>
+            </li>
+        </ul>
+    </nav>
 </body>
-
 </html>

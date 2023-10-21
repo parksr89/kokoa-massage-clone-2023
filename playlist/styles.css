@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,800&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;  
+    padding-top: 5px;  
+}
+.playlist{
+    width: 400px;
+    height: 760px;
+    border: 4px solid #07c7afff;
+    position: relative;
+    padding: 25px;
+    padding-top: 30px;
+    justify-content:center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:bold;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+.playlist__top{           
+    display: flex;
+    width: 66%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.big-list{
+    width: 350px;
+    display: flex;
+    align-items: center;    
+}
+
+.big-list__icon{ 
+    display: flex;   
+    width: 135px;
+    height: 110px;
+    background-color:#ffbd11ff ;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    color: white;    
+    border-radius: 17px;
+    border: 2px solid black;
+}
+.big-list__words{
+    margin: 8px;
+    padding: 20px;  
+    margin-top: -3px;  
+}
+
+.big-list__words span{
+    display:block;    
+}
+
+.big-list__words span:first-child{
+    font-size:30px;
+    
+}
+
+.big-list__words span:last-child{
+    font-size:15px;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px;    
+}
+
+.icons__play{
+    margin: 10px 0px;
+    padding: 13px 52px;
+    font-size: 20px;    
+    border-radius: 15px;
+    border: 2px solid black;
+    border-bottom: 5px outset black; 
+    background-color: rgba(137, 43, 226, 0.418);   
+}
+
+.icons__love-plus{
+    width: 40%;       
+    display:flex;      
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.icons__love-plus i:first-child{
+    display: block;
+    font-size: 30px; 
+    padding:10px;
+    border-radius: 50%;
+    border: 2px solid black;
+    border-bottom: 5px outset black;  
+    background-color: rgba(137, 43, 226, 0.418);   
+}
+
+.icons__love-plus i:last-child{
+    display: block;
+    font-size: 30px; 
+    padding:10px 12px;
+    border-radius: 50%;
+    border: 2px solid black;
+    border-bottom: 5px outset black; 
+    background-color: rgba(137, 43, 226, 0.418); 
+}
+
+.list{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 15px;    
+    justify-content: left;
+    align-items: center;
+}
+
+.list__icon{
+    width: 60PX;
+    height: 60px; 
+    border: 2px solid black; 
+    border-radius: 14px;  
+}
+
+.list__contents{
+ padding:10px; 
+ 
+ align-items: center;
+}
+
+.list__contents span{
+    display: block; 
+    padding-top: 2px; 
+}
+
+.list__contents span:first-child{
+font-size:22px ;
+
+}
+
+.list__contents span:last-child{
+    font-size: 14px;
+    opacity: 0.5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.tomato{
+    background-color: #f85a2aff;
+}
+
+.pink{
+    background-color:#ff89bbff;
+}
+
+.blue{
+    background-color:#1947e5ff;
+}
+
+.aqua{
+    background-color:#00c6adff;
+}
+

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Music app</title>
+    <script src="https://kit.fontawesome.com/fa2e5e6392.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>    
+    <div class="album-screen screen__main"> 
+
+        <header class="album-screen__header screen-header__main">
+            <div><i class="fa-solid fa-arrow-right fa-rotate-180"></i></div>
+            <div><i class="fa-solid fa-magnifying-glass"></i></div>
+        </header>
+
+        <div class="album-screen__sing-contents">
+            <img src="https://badtzmarucy831.files.wordpress.com/2011/06/sg-wannabe.jpg" / >
+            <h3>SG wannabe</h3>
+            <h5>SG Wanna Be+ </h5>
+        </div>
+
+        <div class="album-screen__options">
+            <span>Shuffle</span>
+            <span>
+                <i class="fa-solid fa-heart"></i> 
+                <h6>212,971</h6>
+            </span>
+        </div>
+
+        <div class="album-screen__playlist">
+            <ul class="album-screen__playlist__list">
+                <li class="album-screen__playlist__item">
+                    <div class="album-screen__playlist__item-contents">
+                        <div class="album-screen__playlist__item-contents-photo">
+                            <div class="album-screen__playlist__item-contents-photo-Rhythm">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <img src="https://i.kfs.io/playlist/global/58748786v59/cropresize/600x600.jpg" />                            
+                        </div>
+                        <div class="album-screen__playlist__item-text">
+                            <span class="album-screen__playlist__item-contents-singer contents-singer ">SG Wanna Be</span>
+                            <span class="album-screen__playlist__item-contents-singname  contents-singname">Timeless<span>
+                        </div>
+                    </div>
+                    <div class="album-screen__playlist__item-moreicon">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </li>
+                <li class="album-screen__playlist__item">
+                    <div class="album-screen__playlist__item-contents">
+                        <div class="album-screen__playlist__item-contents-photo">
+                            <div class="album-screen__playlist__item-contents-photo-Rhythm">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>                            
+                            <img src="https://lh3.googleusercontent.com/bKhx3FI1wGhx6EwRStZztGhuL6HRiMg0uhgZngI1KTZ8ywAFZem9NrJR8QDJBqmNMOW6WOQRb-KTqxrZhA=w480-h480-l90-rj" />
+                        </div>
+                        <div class="album-screen__playlist__item-text">
+                            <span class="album-screen__playlist__item-contents-singer contents-singer ">SG Wanna Be</span>
+                            <span class="album-screen__playlist__item-contents-singname  contents-singname">lalala<span>
+                        </div>
+                    </div>
+                    <div class="album-screen__playlist__item-moreicon">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </li>
+                <li class="album-screen__playlist__item">
+                    <div class="album-screen__playlist__item-contents">
+                        <div class="album-screen__playlist__item-contents-photo">
+                            <div class="album-screen__playlist__item-contents-photo-Rhythm">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <img src="https://lh3.googleusercontent.com/AAyFBHY_yB3Dyp0w2kXvf9Gs5Sqz4alSdOJeh6rHfIWtBDIhH-hIlZLDsyXJl3Yt_Z4uJXTQ1qju0Bph=w544-h544-l90-rj" />
+                        </div>
+                        <div class="album-screen__playlist__item-text">
+                            <span class="album-screen__playlist__item-contents-singer contents-singer ">SG Wanna Be</span>
+                            <span class="album-screen__playlist__item-contents-singname  contents-singname">Arirang<span>
+                        </div>
+                    </div>
+                    <div class="album-screen__playlist__item-moreicon">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </li>
+                <li class="album-screen__playlist__item">
+                    <div class="album-screen__playlist__item-contents">
+                        <div class="album-screen__playlist__item-contents-photo">
+                            <div class="album-screen__playlist__item-contents-photo-Rhythm">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <img src="data:image/jpeg;base64,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" />
+                        </div>
+                        <div class="album-screen__playlist__item-text">
+                            <span class="album-screen__playlist__item-contents-singer contents-singer ">SG Wanna Be</span>
+                            <span class="album-screen__playlist__item-contents-singname  contents-singname">Crime and Punishment<span>
+                        </div>
+                    </div>
+                    <div class="album-screen__playlist__item-moreicon">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </li>
+                <li class="album-screen__playlist__item">
+                    <div class="album-screen__playlist__item-contents">
+                        <div class="album-screen__playlist__item-contents-photo">
+                            <div class="album-screen__playlist__item-contents-photo-Rhythm">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <img src="https://lh3.googleusercontent.com/E_pjmvUg_gjglCplf8Z7wCzeSGnUM_As8ftnHyvg-iVKjCLoLxwuX0ULNLvi0k2Rl-tqBvsScnIGiOt8eQ=w544-h544-l90-rj" />
+                        </div>
+                        <div class="album-screen__playlist__item-text">
+                            <span class="album-screen__playlist__item-contents-singer contents-singer ">SG Wanna Be</span>
+                            <span class="album-screen__playlist__item-contents-singname  contents-singname">Against one's fate<span>
+                        </div>
+                    </div>
+                    <div class="album-screen__playlist__item-moreicon">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </li>
+                <li class="album-screen__playlist__item">
+                    <div class="album-screen__playlist__item-contents">
+                        <div class="album-screen__playlist__item-contents-photo">
+                            <div class="album-screen__playlist__item-contents-photo-Rhythm">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <img src="https://lh3.googleusercontent.com/MllSuGrIuuHIRSTGu-l9MRfbLlSdAH8DoJOTXr2hYN37X-bGpoR8N3hOB2WdzVj1xlpyFkWsMzMnRm9C=w544-h544-l90-rj" />
+                        </div>
+                        <div class="album-screen__playlist__item-text">
+                            <span class="album-screen__playlist__item-contents-singer contents-singer ">SG Wanna Be</span>
+                            <span class="album-screen__playlist__item-contents-singname  contents-singname">Partner for Life<span>
+                        </div>
+                    </div>   
+                    <div class="album-screen__playlist__item-moreicon">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div> 
+                </li>
+            </ul>
+        </div>
+
+        <div class="album-screen__play-options">
+
+            <div class="album-screen__play-options-contents">
+                <span class="album-screen__play-options-content-singer contents-singer">
+                    SG Wanna Be
+                </span>
+                <span class="album-screen__play-options-contents-singname contents-singname">
+                    Timeless
+                </span>
+            </div>
+            
+            <div class="album-screen__play-options-button">
+                <i class="fa-solid fa-backward-step"></i>
+                <div class="album-screen__play-options-button__play-pause">                    
+                    <!--<i class="fa-solid fa-play"></i> -->
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                
+                <i class="fa-solid fa-forward-step"></i>                
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="play-screen screen__main">
+
+        <header class="play-screen__header screen-header__main">
+            <div><i class="fa-solid fa-arrow-right fa-rotate-180"></i></div>
+            <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+        </header>
+
+        <div class="play-screen__contents">
+            <img src="https://i.kfs.io/playlist/global/58748786v59/cropresize/600x600.jpg" /> 
+            <h3 class="play-screen__contents__sing">Timeless</h3>
+            <h5 class="play-screen__contents__singer">SG Wanna Be</h5>
+        </div>
+
+        <div class="play-screen__play-options">
+         <div class="play-screen__play-options__duration">
+            <div class="play-screen__play-options__duration-texts">
+                <div>
+                    <span class="play-screen__play-options__duration-texts-time">1:56</span>
+                    <span class="play-screen__play-options__duration-texts-time">2:21</span>
+                </div>
+                <div  class="play-screen__play-options__duration-texts-pregress">
+                    <div class="play-screen__play-options__duration-texts-pregressingmax"></div>
+                    <div class="play-screen__play-options__duration-texts-pregressing"></div>
+                    <div class="play-screen__play-options__duration-texts-pregress-circle"></div>
+                </div>
+            </div>
+            <div class="play-screen__play-options__duration-bar">
+
+            </div>
+         </div>
+
+         <div class="play-screen__play-options__buttens">
+            <i class="fa-solid fa-repeat"></i>
+            <i class="fa-solid fa-forward-step fa-rotate-180"></i>
+            <i class="fa-solid fa-play"></i>
+            <!-- <i class="fa-solid fa-pause"></i> -->
+            <i class="fa-solid fa-forward-step"></i>
+            <i class="fa-solid fa-shuffle"></i> 
+         </div>   
+         
+        </div>
+    </div>
+  </body>
+</html>
+
+
