@@ -36,7 +36,6 @@ header {
 }
 a {
   font-size: 30px;
-  background-color: #fbe15c;
   color: #0e8b5d;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
@@ -47,4 +46,20 @@ a {
 
 .nav__btn:hover a {
   color: tomato;
+}
+.nav__btn:last-child {
+  font-size: 30px;
+  background-color: #fb895c;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+.nav__btn:last-child a {
+  font-size: 30px;
+  color: #0e2f8b;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+
+.nav__btn:last-child:hover a {
+  color: rgb(46, 145, 175);
 }
